@@ -1,0 +1,43 @@
+.Tree{
+
+}
+.Tree ul {
+    width: 100%;
+}
+.Tree ul li{
+    padding-left: 20px;
+}
+.TreeNode{
+    display: flex;
+    padding: 4px 0px;
+    align-items: center;
+}
+
+.Tree ul li a:hover{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+.Tree ul li a{
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+}
+.TreeIcon{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+.TreeTitle{
+   margin-left: 4px;
+}
+.TreeLink{
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/link.svg") no-repeat;
+    background-size: contain;
+    margin-top: 4px;
+    margin-left: 6px;
+}
