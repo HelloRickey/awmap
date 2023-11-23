@@ -6,10 +6,11 @@ import website from "../../assets/website.svg";
 
 import testimg from "../../assets/logo.svg";
 import rickey from "../../assets/rickey.png";
-import github from "../../assets/github.svg"
+import github from "../../assets/github.svg";
 import InfraData from "../../data/InfraData";
 import Tree from "../Tree/Tree";
 import ArticleData from "../../data/ArticleData.json";
+import GameData from "../../data/GameData";
 import "./Hub.css";
 
 class Hub extends Component {
@@ -18,27 +19,8 @@ class Hub extends Component {
     this.state = {
       theme: "light",
       selectedTab: 0,
-      frameWorks: ["All", "MUD", "DOJO", "Others"],
-
-      data: [
-        {
-          id: 12345678,
-          parentId: null,
-          label: "My parent node",
-          items: [
-            {
-              id: 87654321,
-              label: "My file",
-              parentId: 12345678,
-            },
-          ],
-        },
-        {
-          id: 56789012,
-          parentId: 12345678,
-          label: "My child node",
-        },
-      ],
+      frameWorks: ["All", "MUD", "Dojo", "Others"],
+      gameData: GameData,
     };
   }
 
@@ -80,8 +62,20 @@ class Hub extends Component {
   };
 
   changeFrameWorkTabs = (index) => {
+    var tabGames=[]
+    if(index!=0){
+      for(var item of GameData){
+        console.log("item.engine",item.engine)
+        if(item.engine==this.state.frameWorks[index]){
+          tabGames.push(item)
+        }
+      }
+    }else{
+      tabGames=GameData;
+    }
     this.setState({
       selectedTab: index,
+      gameData:tabGames
     });
   };
 
@@ -129,15 +123,17 @@ class Hub extends Component {
         </div>
         <ul className="Infras">
           {InfraData.map((item, index) => (
-            <li>
+            <li key={index}>
               <div className="Infra">
                 <div className="InfraHeader">
                   <img src={item.icon} className="InfraImage" />
-                  <div className="InfraName">{item.name}</div>
+                  <div className="InfraName">
+                    <a href={item.website} target="_blank">
+                      {item.name}
+                    </a>
+                  </div>
                 </div>
-                <p className="InfraDescription">
-                  {item.description}
-                </p>
+                <p className="InfraDescription">{item.description}</p>
               </div>
               <div className="InfraMenu">
                 <div className="InfraMenuIcons">
@@ -147,10 +143,13 @@ class Hub extends Component {
                   <a href={item.website}>
                     <img src={website} width={22} />
                   </a>
-                  {item.github!=""?(   <a href={item.github}>
-                    <img src={github} width={22} />
-                  </a>):(<span></span>)}
-               
+                  {item.github != "" ? (
+                    <a href={item.github}>
+                      <img src={github} width={22} />
+                    </a>
+                  ) : (
+                    <span></span>
+                  )}
                 </div>
                 {/* <div className="InfraMenuMore">More</div> */}
               </div>
@@ -172,32 +171,38 @@ class Hub extends Component {
             </li>
           ))}
         </ul>
-        <ul className="Infras">
-          <li>
-            <div className="Infra">
-              <div className="InfraHeader">
-                <img src={testimg} className="InfraImage" />
-                <div className="InfraName">Cypher News</div>
+
+        <ul className="Games">
+          {this.state.gameData.map((item, index) => (
+            <li key={index}>
+              <div className="GamesHeader">
+                <img src={item.icon} className="GamesImage" />
+                <div className="GamesName">
+                  <a href={item.website} target="_blank">
+                   {item.name}
+                  </a>
+                </div>
               </div>
-              <p className="InfraDescription">
-                Redstone runs applications on an OP Stack chain optimized for
-                games, autonomous worlds, and other ambitious onchain
-                applications.
+              <p className="GamesDescription">
+              {item.description}
               </p>
-            </div>
-            <div className="InfraMenu">
-              <div className="InfraMenuIcons">
-                <a href="">
-                  <img src={twitter} width={22} />
-                </a>
-                <a href="">
-                  <img src={website} width={22} />
-                </a>
+
+              <div className="GameEngine"> {item.engine}</div>
+              <div className="GamesMenu">
+                <div className="GamesMenuIcons">
+                  <a href={item.twitter} target="_blank">
+                    <img src={twitter} width={22} />
+                  </a>
+                  <a href={item.website} target="_blank">
+                    <img src={website} width={22} />
+                  </a>
+                </div>
+                {/* <div className="InfraMenuMore">More</div> */}
               </div>
-              <div className="InfraMenuMore">More</div>
-            </div>
-          </li>
+            </li>
+          ))}
         </ul>
+
         {/* <div className="CategoryTitle">Builders</div>
         <div className="CategoryIntroduce">Builders of autonomous world.</div>
         <div className="Builders">
@@ -224,7 +229,7 @@ class Hub extends Component {
         </div>
         <ul className="Articles">
           {ArticleData.map((item, index) => (
-            <li>
+            <li key={index}>
               <p>
                 <a href={item.link} target="_blank">
                   {item.name}
