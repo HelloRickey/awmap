@@ -1,17 +1,29 @@
 import React, { Component } from "react";
 import lightModeIcon from "../../assets/lightMode.svg";
 import darkModeIcon from "../../assets/darkMode.svg";
-import twitter from "../../assets/twitter.svg";
-import website from "../../assets/website.svg";
 
-import testimg from "../../assets/logo.svg";
 import rickey from "../../assets/rickey.png";
-import github from "../../assets/github.svg";
+
+import githubLight from "../../assets/github_light.svg";
+import twitterLight from "../../assets/twitter_light.svg";
+import websiteLight from "../../assets/website_light.svg";
+
+import githubDark from "../../assets/github_dark.svg";
+import twitterDark from "../../assets/twitter_dark.svg";
+import websiteDark from "../../assets/website_dark.svg";
+
 import InfraData from "../../data/InfraData";
 import Tree from "../Tree/Tree";
 import ArticleData from "../../data/ArticleData.json";
 import GameData from "../../data/GameData";
+
+import logo from "../../assets/logo.svg";
+import logoDark from "../../assets/logo_dark.svg";
 import "./Hub.css";
+
+import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
+import menuLight from "../../assets/menu_light.svg";
+import menuDark from "../../assets/menu_dark.svg";
 
 class Hub extends Component {
   constructor(props) {
@@ -19,6 +31,7 @@ class Hub extends Component {
     this.state = {
       theme: "light",
       selectedTab: 0,
+      nav: ["Infras", "Games", "Maps", "Influencers", "Articles"],
       frameWorks: ["All", "MUD", "Dojo", "Others"],
       gameData: GameData,
     };
@@ -62,41 +75,87 @@ class Hub extends Component {
   };
 
   changeFrameWorkTabs = (index) => {
-    var tabGames=[]
-    if(index!=0){
-      for(var item of GameData){
-        console.log("item.engine",item.engine)
-        if(item.engine==this.state.frameWorks[index]){
-          tabGames.push(item)
+    var tabGames = [];
+    if (index != 0) {
+      for (var item of GameData) {
+        console.log("item.engine", item.engine);
+        if (item.engine == this.state.frameWorks[index]) {
+          tabGames.push(item);
         }
       }
-    }else{
-      tabGames=GameData;
+    } else {
+      tabGames = GameData;
     }
     this.setState({
       selectedTab: index,
-      gameData:tabGames
+      gameData: tabGames,
     });
+  };
+
+  navScroll = (nav) => {
+    const element = document.getElementById(nav);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   render() {
     return (
       <div className="Hub">
         <div className="HubHeader">
-          <div className="HubLogo">Logo</div>
-          <ul className="HubNav">
-            <li>Infras</li>
-            <li>Games</li>
-            <li>Maps</li>
-            <li>Influencers</li>
-            <li>Articles</li>
-          </ul>
-          <div className="changeTheme" onClick={this.changeTheme.bind(this)}>
-            {this.state.theme == "dark" ? (
-              <img src={darkModeIcon} width={32} />
+          <div className="HubLogo">
+            {this.state.theme == "light" ? (
+              <img src={logo} width="100%" />
             ) : (
-              <img src={lightModeIcon} width={32} />
+              <img src={logoDark} width="100%" />
             )}
+          </div>
+          <ul className="HubNav">
+            {this.state.nav.map((item, index) => (
+              <li key={index} onClick={this.navScroll.bind(this, item)}>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <div className="navButtons">
+            <div className="changeTheme" onClick={this.changeTheme.bind(this)}>
+              {this.state.theme == "dark" ? (
+                <img src={darkModeIcon} width={32} />
+              ) : (
+                <img src={lightModeIcon} width={32} />
+              )}
+            </div>
+            <a className="navTwitter" href="" target="_blank">
+              {this.state.theme == "dark" ? (
+                <img src={twitterDark} width={24} />
+              ) : (
+                <img src={twitterLight} width={24} />
+              )}
+            </a>
+            <Menu
+              align="end"
+              gap={4}
+              menuClassName={"navMenu"}
+              menuButton={
+                <div className="menu">
+                  {this.state.theme == "light" ? (
+                    <img src={menuLight} width={32} />
+                  ) : (
+                    <img src={menuDark} width={32} />
+                  )}
+                </div>
+              }
+            >
+              {this.state.nav.map((item, index) => (
+                <div
+                  key={index}
+                  className={"menuItem"}
+                  onClick={this.navScroll.bind(this, item)}
+                >
+                  {item}
+                </div>
+              ))}
+            </Menu>
           </div>
         </div>
         <div className="HubBanner">
@@ -117,7 +176,9 @@ class Hub extends Component {
           </a>
         </div>
 
-        <div className="CategoryTitle">Infras</div>
+        <div className="CategoryTitle" id="Infras">
+          Infras
+        </div>
         <div className="CategoryIntroduce">
           Layer2 Network, development framework, game engine.
         </div>
@@ -138,14 +199,26 @@ class Hub extends Component {
               <div className="InfraMenu">
                 <div className="InfraMenuIcons">
                   <a href={item.twitter}>
-                    <img src={twitter} width={22} />
+                    {this.state.theme == "light" ? (
+                      <img src={twitterLight} width={22} />
+                    ) : (
+                      <img src={twitterDark} width={22} />
+                    )}
                   </a>
                   <a href={item.website}>
-                    <img src={website} width={22} />
+                    {this.state.theme == "light" ? (
+                      <img src={websiteLight} width={22} />
+                    ) : (
+                      <img src={websiteDark} width={22} />
+                    )}
                   </a>
                   {item.github != "" ? (
                     <a href={item.github}>
-                      <img src={github} width={22} />
+                      {this.state.theme == "light" ? (
+                        <img src={githubLight} width={22} />
+                      ) : (
+                        <img src={githubDark} width={22} />
+                      )}
                     </a>
                   ) : (
                     <span></span>
@@ -156,7 +229,9 @@ class Hub extends Component {
             </li>
           ))}
         </ul>
-        <div className="CategoryTitle">Games</div>
+        <div className="CategoryTitle" id="Games">
+          Games
+        </div>
         <div className="CategoryIntroduce">Fully on-chain games.</div>
         <ul className="FrameWorkTabs">
           {this.state.frameWorks.map((item, index) => (
@@ -179,22 +254,28 @@ class Hub extends Component {
                 <img src={item.icon} className="GamesImage" />
                 <div className="GamesName">
                   <a href={item.website} target="_blank">
-                   {item.name}
+                    {item.name}
                   </a>
                 </div>
               </div>
-              <p className="GamesDescription">
-              {item.description}
-              </p>
+              <p className="GamesDescription">{item.description}</p>
 
               <div className="GameEngine"> {item.engine}</div>
               <div className="GamesMenu">
                 <div className="GamesMenuIcons">
                   <a href={item.twitter} target="_blank">
-                    <img src={twitter} width={22} />
+                    {this.state.theme == "light" ? (
+                      <img src={twitterLight} width={22} />
+                    ) : (
+                      <img src={twitterDark} width={22} />
+                    )}
                   </a>
                   <a href={item.website} target="_blank">
-                    <img src={website} width={22} />
+                    {this.state.theme == "light" ? (
+                      <img src={websiteLight} width={22} />
+                    ) : (
+                      <img src={websiteDark} width={22} />
+                    )}
                   </a>
                 </div>
                 {/* <div className="InfraMenuMore">More</div> */}
@@ -216,14 +297,18 @@ class Hub extends Component {
           </ul>
         </div> */}
 
-        <div className="CategoryTitle">Maps</div>
+        <div className="CategoryTitle" id="Maps">
+          Maps
+        </div>
         <div className="CategoryIntroduce">
           Roadmaps for becoming an autonomous world builder.
         </div>
 
         <Tree></Tree>
 
-        <div className="CategoryTitle">Articles</div>
+        <div className="CategoryTitle" id="Articles">
+          Articles
+        </div>
         <div className="CategoryIntroduce">
           Latest trends in the autonomous world.
         </div>

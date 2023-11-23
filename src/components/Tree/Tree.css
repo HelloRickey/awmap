@@ -6,6 +6,7 @@
 }
 .Tree ul li{
     padding-left: 20px;
+    color: var(--main-color);
 }
 .TreeNode{
     display: flex;
@@ -21,9 +22,10 @@
 .Tree ul li a{
     display: flex;
     align-items: center;
-    color: #000;
+    color: var(--main-color);
     text-decoration: none;
 }
+
 .TreeIcon{
     display: block;
     width: 18px;

@@ -1,7 +1,7 @@
 :root {
-    --main-color: #111827;
+    --main-color: #000;
     --second-color:#6b7280;
-    --border-color:#e5e7eb;
+    --border-color:#000;
     --link-color:#243277;
     --bg-color:#fff;
     --body-color:#fff;
@@ -9,10 +9,10 @@
   
   [theme="dark"] {
     --main-color: #fff;
-    --second-color:#7E858F;
-    --border-color:#31363C;
+    --second-color:#7C8590;
+    --border-color:#363B42;
     --link-color:#477FEF;
-    --bg-color:#171B21;
+    --bg-color:#0D1116;
     --body-color:#000;
   }
   
@@ -35,22 +35,30 @@ body{
 }
 .HubLogo{
     width: 100px;
-    height: 50px;
+   height: 40px;
+   display: flex;
+   align-items: center;
 }
 .HubNav{
     display: flex;
     list-style-type: none;
-
+ 
 }
+
 .HubNav li{
+    color: var(--main-color);
     cursor: pointer;
     width: 100px;
     text-align: center;
 }
+.navButtons{
+    display: flex;
+    align-items: center;
+}
 .changeTheme{
-    height: 50px;
-    width: 50px;
-    border: 1px solid var(--border-color);
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--border-color);
     background: var(--bg-color);
     border-radius: 4px;
     margin-left: 30px;
@@ -59,17 +67,64 @@ body{
     display: flex;
     cursor: pointer;
 }
+.navTwitter{
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    border-radius: 4px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.menu{
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    border-radius: 4px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer; 
+    display: none;
+}
+.navMenu{
+    width: 200px;
+    background:var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+}
+.menuItem{
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 15px 0px;
+    padding-left: 15px;
+}
 
+.menuItem:hover{
+    border: none;
+}
+.szh-menu__item--hover {
+    border: 0px;
+ 
+ }
 .HubBanner{
+    color: var(--main-color);
     width: 100%;
     padding: 100px 0px;
 }
 
 .HubBanner h1{
+
     text-align: center;
     width: 100%;
 }
 .HubBanner h2{
+    color: var(--second-color);
     text-align: center;
     width: 100%;  
 }
@@ -79,18 +134,21 @@ body{
     height: 40px;
     line-height: 36px;
     border-radius: 4px;
-    border: 2px solid #000;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--main-color);
     margin: 0px auto;
     cursor: pointer;
   
 }
 .CategoryTitle{
-
+    color: var(--main-color);
     font-size: 22px;
     font-weight: bold;
     margin-top: 100px;
 }
 .CategoryIntroduce{
+    color: var(--main-color);
     margin-bottom: 20px;
 }
 .Infras{
@@ -99,7 +157,7 @@ body{
    
 }
 .Infra a,.Games a{
-    color: #000;
+    color: var(--main-color);
     text-decoration: none;
 }
 .Infra a:hover,.Games a:hover{
@@ -108,7 +166,8 @@ body{
 .Infras li{
 
     width: 258px;
-    border: 2px solid #000;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
     border-radius: 4px;
     padding: 20px;
     margin-right: 18px;
@@ -130,6 +189,7 @@ body{
     margin-left: 10px;
 }
 .InfraDescription{
+    color: var(--second-color);
     height: 80px;
     margin-top: 14px;
     font-size: 14px;
@@ -172,7 +232,8 @@ body{
 .Games li{
 
     width: 100%;
-    border: 2px solid #000;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
     border-radius: 4px;
     padding: 20px;
     margin-right: 18px;
@@ -203,6 +264,10 @@ body{
     width: 300px;
     height: 80px;
     font-size: 14px;
+    color: var(--second-color);
+}
+.GameEngine{
+    color: var(--main-color);
 }
 .GamesMenu{
     display: flex;
@@ -232,46 +297,35 @@ body{
     border-radius: 4px;
     height: 30px;
     line-height: 28px;
-    border: 2px solid #eee;
+    border: 2px solid var(--second-color);
     margin-right: 10px;
-    color: #6b7280;
+    color: var(--second-color);
 }
 .FrameWorkTabs .FrameWorkTabsSelected{
     cursor: pointer;
-    color: #000;
-    border: 2px solid #000;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
-.BuildersProfile li{
-    width: 260px;
-    border: 2px solid #000;
-    border-radius: 4px;
-    padding: 20px;
-    margin-right: 18px;
-    display: flex;
-}
-.BuildersAvatar{
-    width: 72px;
-    height: 72px;
-    display: block;
-} 
 
-.Articles{
 
-}
 .Articles li{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--main-color);
 }
 .Articles li p{
     width: 80%;
 }
-.Articles li a{
-    color: #000;
+.Articles li  a{
+    color:var(--second-color);
+    text-decoration: none;
+}
+.Articles li p a{
+    color: var(--main-color);
     text-decoration: none;
 }
 .Articles li a:hover{
@@ -279,6 +333,7 @@ body{
 }
 
 .Footer{
+    color: var(--main-color);
     text-align: center;
     margin-top: 200px;
     padding-bottom: 100px;
@@ -290,7 +345,7 @@ body{
     margin-right: 6px;
 }
 .HubAuthor{
-    color: #000;
+    color: var(--main-color);
     text-decoration: none;
     margin: 0px auto;
     display: flex;
@@ -300,5 +355,35 @@ body{
     margin-top: 100px;
 }
 
+
+@media only screen and (max-width: 576px) {
+    .HubNav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        text-align: center;
+
+    }
+    .HubBanner h1{
+        font-size: 26px;
+    }
+    .HubBanner h2{
+        font-size: 22px;
+    }
+    .Infras li{
+        margin-right: 0px;
+        width: 100%;
+    }
+    .Games li{
+        flex-direction: column;
+        align-items:start;
+        width: calc(100% - 40px);
+        margin-right: 0px;
+    }
+    .GamesMenu{
+        margin-top: 10px;
+    }
+}
 
 

@@ -29,7 +29,7 @@ const TreeData = [
         sub: [
           {
             icon: QuestionIcon,
-            title: "What is an autonomous world?",
+            title: "What is an autonomous world? ",
             link: "https://aw.network/",
             sub: [],
           },
