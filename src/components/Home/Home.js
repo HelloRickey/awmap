@@ -19,19 +19,19 @@ import GameData from "../../data/GameData";
 
 import logo from "../../assets/logo.svg";
 import logoDark from "../../assets/logo_dark.svg";
-import "./Hub.css";
+import "./Home.css";
 
 import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 import menuLight from "../../assets/menu_light.svg";
 import menuDark from "../../assets/menu_dark.svg";
 
-class Hub extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       theme: "light",
       selectedTab: 0,
-      nav: ["Infras", "Games", "Maps", "Influencers", "Articles"],
+      nav: ["Infras", "Games", "Maps", "Articles"],
       frameWorks: ["All", "MUD", "Dojo", "Others"],
       gameData: GameData,
     };
@@ -118,6 +118,18 @@ class Hub extends Component {
             ))}
           </ul>
           <div className="navButtons">
+            <a
+              className="navTwitter"
+              href="https://twitter.com/awmap_xyz"
+              target="_blank"
+            >
+              {this.state.theme == "dark" ? (
+                <img src={twitterDark} width={24} />
+              ) : (
+                <img src={twitterLight} width={24} />
+              )}
+            </a>
+
             <div className="changeTheme" onClick={this.changeTheme.bind(this)}>
               {this.state.theme == "dark" ? (
                 <img src={darkModeIcon} width={32} />
@@ -125,13 +137,7 @@ class Hub extends Component {
                 <img src={lightModeIcon} width={32} />
               )}
             </div>
-            <a className="navTwitter" href="" target="_blank">
-              {this.state.theme == "dark" ? (
-                <img src={twitterDark} width={24} />
-              ) : (
-                <img src={twitterLight} width={24} />
-              )}
-            </a>
+
             <Menu
               align="end"
               gap={4}
@@ -159,11 +165,16 @@ class Hub extends Component {
           </div>
         </div>
         <div className="HubBanner">
-          <h1>Autonomous World Hub</h1>
-          <h2>Everything about AW and fully on-chain games</h2>
+          <h1>Autonomous World Map</h1>
+          <h2>A curated list of AW and fully on-chain games</h2>
 
-          <div className="HubBannerSubmit">Submit</div>
-
+          <a
+            href="https://twitter.com/intent/tweet?text=Hey%20@awmap_xyz,%20please%20add%20it%20to%20the%20autonomous%20world%20map:"
+            target="_blank"
+            className="HubBannerSubmit"
+          >
+           Submit
+          </a>
           <a
             href="https://twitter.com/Web3Rickey"
             target="_blank"
@@ -232,7 +243,9 @@ class Hub extends Component {
         <div className="CategoryTitle" id="Games">
           Games
         </div>
-        <div className="CategoryIntroduce">Fully on-chain games.</div>
+        <div className="CategoryIntroduce">
+          Fully on-chain and playable games.
+        </div>
         <ul className="FrameWorkTabs">
           {this.state.frameWorks.map((item, index) => (
             <li
@@ -310,7 +323,7 @@ class Hub extends Component {
           Articles
         </div>
         <div className="CategoryIntroduce">
-          Latest trends in the autonomous world.
+          Classic and valuable articles.
         </div>
         <ul className="Articles">
           {ArticleData.map((item, index) => (
@@ -328,10 +341,10 @@ class Hub extends Component {
         </ul>
 
         <div className="Footer">
-          <p>© 2023 AWhub</p>
+          <p>© 2023 AW Map</p>
         </div>
       </div>
     );
   }
 }
-export default Hub;
+export default Home;

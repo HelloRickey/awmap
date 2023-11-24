@@ -1,6 +1,44 @@
-[{
-    "name":"Reflect uses GPT-4 and Whisper from OpenAI to improve your writing, organize your thoughts, and act as your intellectual thought partner.",
-    "link":"http://localhost:3001/",
-    "author":"jack",
-    "authorLink":"http://localhost:3001/"
-}]
+[
+  {
+    "name": "Autonomous Worlds (Part 1)",
+    "link": "https://0xparc.org/blog/autonomous-worlds",
+    "author": "ludens",
+    "authorLink": "https://twitter.com/l_udens"
+  },
+  {
+    "name": "The Strongest Crypto Gaming Thesis",
+    "link": "https://gubsheep.substack.com/p/the-strongest-crypto-gaming-thesis",
+    "author": "gubsheep",
+    "authorLink": "https://twitter.com/gubsheep"
+  },
+  {
+    "name": "Infinite Games",
+    "link": "https://ronan.eth.limo/blog/infinite-games",
+    "author": "wighawag",
+    "authorLink": "https://twitter.com/wighawag"
+  },
+  {
+    "name": "Unblocking On-Chain Games",
+    "link": "https://medium.com/@wbarobinson",
+    "author": "Will Robinson",
+    "authorLink": "https://twitter.com/DangerWillRobin"
+  },
+  {
+    "name": "The New World",
+    "link": "https://world.mirror.xyz/",
+    "author": "Lattice",
+    "authorLink": "https://twitter.com/latticexyz"
+  },
+  {
+    "name": "The Case for Fully On-chain Games",
+    "link": "https://mirror.xyz/1kx.eth/v6HaPiqRvtC_qIeDnyhiC8ICjwtBdLiNhZh4vbqsW-s",
+    "author": "taetaehoho",
+    "authorLink": "https://twitter.com/0xtaetaehoho"
+  },
+  {
+    "name": "On-chain Gaming: Principles for Building Viable Systems",
+    "link": "https://medium.com/mithraeum/on-chain-gaming-principles-for-building-viable-systems-2c3e522c2df3",
+    "author": "Bohdan Melnychuk",
+    "authorLink": "https://medium.com/@the.last.triarius"
+  }
+]

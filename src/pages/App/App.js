@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Hub from "../../components/Hub/Hub";
+import Home from "../../components/Home/Home";
 
 import "./App.css";
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
 
      
         <div  className="container">
-          <Hub ></Hub>
+          <Home ></Home>
         </div>
 
     );
