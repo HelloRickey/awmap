@@ -173,7 +173,7 @@ class Home extends Component {
             target="_blank"
             className="HubBannerSubmit"
           >
-           Submit
+            Submit
           </a>
           <a
             href="https://twitter.com/Web3Rickey"
@@ -199,24 +199,42 @@ class Home extends Component {
               <div className="Infra">
                 <div className="InfraHeader">
                   <img src={item.icon} className="InfraImage" />
-                  <div className="InfraName">
+              
+                    {item.built != "" ? (
+                    <div className="InfraName">
+                    <a href={item.website} target="_blank">
+                      {item.name}
+                    </a>
+                    <a className="InfraBuilt" href={item.built.link} target="_blank">
+                        <img src={item.built.icon} width={18} />
+                        &nbsp;
+                        <div> Built by {item.built.name}</div>
+                        
+                      </a>
+                    </div>
+                    ) : (
+                      <div className="InfraName">
                     <a href={item.website} target="_blank">
                       {item.name}
                     </a>
                   </div>
+                    )}
+                    
+                          
                 </div>
                 <p className="InfraDescription">{item.description}</p>
               </div>
+
               <div className="InfraMenu">
                 <div className="InfraMenuIcons">
-                  <a href={item.twitter}>
+                  <a href={item.twitter} target="_blank">
                     {this.state.theme == "light" ? (
                       <img src={twitterLight} width={22} />
                     ) : (
                       <img src={twitterDark} width={22} />
                     )}
                   </a>
-                  <a href={item.website}>
+                  <a href={item.website} target="_blank">
                     {this.state.theme == "light" ? (
                       <img src={websiteLight} width={22} />
                     ) : (
@@ -224,7 +242,7 @@ class Home extends Component {
                     )}
                   </a>
                   {item.github != "" ? (
-                    <a href={item.github}>
+                    <a href={item.github} target="_blank">
                       {this.state.theme == "light" ? (
                         <img src={githubLight} width={22} />
                       ) : (
@@ -322,9 +340,7 @@ class Home extends Component {
         <div className="CategoryTitle" id="Articles">
           Articles
         </div>
-        <div className="CategoryIntroduce">
-          Classic and valuable articles.
-        </div>
+        <div className="CategoryIntroduce">Classic and valuable articles.</div>
         <ul className="Articles">
           {ArticleData.map((item, index) => (
             <li key={index}>

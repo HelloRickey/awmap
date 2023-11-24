@@ -186,13 +186,21 @@ body{
     font-size: 16px;
 
     height: 48px;
-    line-height: 48px;
+    justify-content: center;
     margin-left: 10px;
+    display: flex;
+    flex-direction:column;
 }
 .InfraDescription{
     color: var(--second-color);
     height: 80px;
     margin-top: 14px;
+    font-size: 14px;
+}
+.InfraBuilt{
+    display: flex;
+    align-items: center;
+    height: 30px;
     font-size: 14px;
 }
 .InfraMenu{
@@ -324,6 +332,7 @@ body{
 .Articles li  a{
     color:var(--second-color);
     text-decoration: none;
+    text-align: right;
 }
 .Articles li p a{
     color: var(--main-color);

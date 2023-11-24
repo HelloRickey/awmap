@@ -13,9 +13,9 @@ import VideoIcon from "../assets/treeicons/video.svg";
 
 import ECSIcon from "../assets/treeicons/ecs.svg";
 import Dojo from "../assets/treeicons/dojo.svg";
-import Mud from "../assets/treeicons/mud.svg";
+import Mud from "../assets/treeicons/mud.png";
 import Curio from "../assets/treeicons/curio.svg";
-import Redstone from "../assets/treeicons/redstone.svg";
+import Redstone from "../assets/treeicons/redstone.png";
 const TreeData = [
   {
     icon: WorldIcon,
