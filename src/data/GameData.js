@@ -9,6 +9,7 @@ import DrawTech from "../assets/gameicons/DrawTech.png"
 import Stratagems from "../assets/gameicons/Stratagems.jpg"
 import RollYourOwn from "../assets/gameicons/RollYourOwn.png"
 import ChaquerRTS from "../assets/gameicons/ChaquerRTS.png"
+import TarochiGame from "../assets/gameicons/TarochiGame.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -79,5 +80,12 @@ const GameData = [{
     twitter:"https://twitter.com/chaquer_rtsgame",
     website:"https://www.chaquer.xyz/",
     engine:"MUD"
-},];
+},{
+    icon:TarochiGame,
+    name:"Tarochi",
+    description:"The onchain RPG. Journey through a vast autonomous world to capture & level-up monsters",
+    twitter:"https://twitter.com/TarochiGame",
+    website:"https://tarochi-alpha.paimastudios.com/",
+    engine:"Paima"
+}];
 export default GameData;
