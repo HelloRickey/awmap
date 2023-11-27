@@ -166,7 +166,7 @@ class Home extends Component {
         </div>
         <div className="HubBanner">
           <h1>Autonomous World Map</h1>
-          <h2>A curated list of AW and fully on-chain games</h2>
+          <h2>A curated list of AW and fully onchain games</h2>
 
           <a
             href="https://twitter.com/intent/tweet?text=Hey%20@awmap_xyz,%20please%20add%20it%20to%20the%20autonomous%20world%20map:"
@@ -262,7 +262,7 @@ class Home extends Component {
           Games
         </div>
         <div className="CategoryIntroduce">
-          Fully on-chain and playable games.
+          Fully onchain and playable games.
         </div>
         <ul className="FrameWorkTabs">
           {this.state.frameWorks.map((item, index) => (
