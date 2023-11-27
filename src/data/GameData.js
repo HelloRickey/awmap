@@ -10,6 +10,7 @@ import Stratagems from "../assets/gameicons/Stratagems.jpg"
 import RollYourOwn from "../assets/gameicons/RollYourOwn.png"
 import ChaquerRTS from "../assets/gameicons/ChaquerRTS.png"
 import TarochiGame from "../assets/gameicons/TarochiGame.jpg"
+import AetherSands from "../assets/gameicons/AetherSands.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -87,5 +88,12 @@ const GameData = [{
     twitter:"https://twitter.com/TarochiGame",
     website:"https://tarochi-alpha.paimastudios.com/",
     engine:"Paima"
+},{
+    icon:AetherSands,
+    name:"Aether Sands",
+    description:"Aether Sands is a fully onchain open-world game that draws inspiration from steam-punk.",
+    twitter:"https://twitter.com/aether_sands",
+    website:"https://aethersands.com/",
+    engine:"MUD"
 }];
 export default GameData;
