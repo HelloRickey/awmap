@@ -11,6 +11,7 @@ import RollYourOwn from "../assets/gameicons/RollYourOwn.png"
 import ChaquerRTS from "../assets/gameicons/ChaquerRTS.png"
 import TarochiGame from "../assets/gameicons/TarochiGame.jpg"
 import AetherSands from "../assets/gameicons/AetherSands.png"
+import BlockHeroes from "../assets/gameicons/BlockHeroes.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -95,5 +96,12 @@ const GameData = [{
     twitter:"https://twitter.com/aether_sands",
     website:"https://aethersands.com/",
     engine:"MUD"
+},{
+    icon:BlockHeroes,
+    name:"Block Heroes",
+    description:"Fully on-chain fantasy RPG on StarkNet. Collect heroes, train them and battle for glory.",
+    twitter:"https://twitter.com/Block__Heroes",
+    website:"https://www.blockheroes.online//",
+    engine:"Others"
 }];
 export default GameData;
