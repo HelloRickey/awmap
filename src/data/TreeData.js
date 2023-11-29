@@ -58,6 +58,12 @@ const TreeData = [
                 sub: [
                   {
                     icon: GithubIcon,
+                    title: "Mud Svelte Template",
+                    link: "https://github.com/0xMugen/Mud-Svelte-template",
+                    sub: [],
+                  },
+                  {
+                    icon: GithubIcon,
                     title: "MUD World Base",
                     link: "https://github.com/Digital-Avatars-and-Robotics/MUDxGodot",
                     sub: [],
