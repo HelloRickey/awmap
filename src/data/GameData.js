@@ -12,6 +12,7 @@ import ChaquerRTS from "../assets/gameicons/ChaquerRTS.png"
 import TarochiGame from "../assets/gameicons/TarochiGame.jpg"
 import AetherSands from "../assets/gameicons/AetherSands.png"
 import BlockHeroes from "../assets/gameicons/BlockHeroes.png"
+import Rhascau from "../assets/gameicons/Rhascau.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -28,10 +29,10 @@ const GameData = [{
     engine:"MUD"
 },{
     icon:Minters,
-    name:"Minters",
+    name:"Battle for Blockchain",
     description:"An MMO auto-battler game. Choose factions, Spooncity or Forktown, and battle for glory and gold.",
     twitter:"https://twitter.com/mintersworld",
-    website:"https://www.mintersworld.com/",
+    website:"https://www.mintersworld.com/bfb",
     engine:"MUD"
 },{
     icon:Downstream,
@@ -102,6 +103,13 @@ const GameData = [{
     description:"Fully on-chain fantasy RPG on StarkNet. Collect heroes, train them and battle for glory.",
     twitter:"https://twitter.com/Block__Heroes",
     website:"https://www.blockheroes.online//",
+    engine:"Others"
+},{
+    icon:Rhascau,
+    name:"Rhascau",
+    description:"Rhascau is a fully onchain, turn-based pod racing game. Play with your friends, and compete for Ether.",
+    twitter:"https://twitter.com/rhascau",
+    website:"https://www.rhascau.com/",
     engine:"Others"
 }];
 export default GameData;
