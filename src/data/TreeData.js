@@ -95,6 +95,12 @@ const TreeData = [
                 sub: [
                   {
                     icon: VideoIcon,
+                    title: "How we built MUD An On chain Kernel for Complex Applications",
+                    link: "https://www.youtube.com/watch?v=gQzZyWw71bo&list=PLX8x7Zj6VeznJuVkZtRyKwseJdrr4mNsE",
+                    sub: [],
+                  },
+                  {
+                    icon: VideoIcon,
                     title: "MUD and Autonomous Worlds ~10 min",
                     link: "https://www.youtube.com/watch?v=Unfj6yN9wmA&t=12s",
                     sub: [],
