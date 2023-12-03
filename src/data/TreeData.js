@@ -85,6 +85,11 @@ const TreeData = [
                     title: "MUD VRF",
                     link: "https://github.com/succinctlabs/mudvrf",
                     sub: [],
+                  },                  {
+                    icon: GithubIcon,
+                    title: "MUD 2048",
+                    link: "https://github.com/themetacat/MUD2048",
+                    sub: [],
                   },
                 ],
               },
