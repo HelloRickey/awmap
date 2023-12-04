@@ -4,6 +4,7 @@ import paima from "../assets/infraicons/paima.png";
 import curio from "../assets/infraicons/curio.svg";
 import mud from "../assets/infraicons/mud.png";
 import redstone from "../assets/infraicons/redstone.png";
+import argus from "../assets/infraicons/argus.jpg"
 const InfraData = [
   {
     icon: mud,
@@ -50,7 +51,16 @@ const InfraData = [
       "Paima Web3 Engine: the industry-leading framework to create L2s for gaming, gamification and autonomous worlds.",
     twitter: "https://twitter.com/PaimaStudios",
     website: "https://paimastudios.com/",
-    github: "",
+    github: "https://github.com/PaimaStudios",
+    built:""
+  },  {
+    icon: argus,
+    name: "Argus",
+    description:
+      "World Engine provides the foundation for game developers to build and customize their own open and interoperable game worlds.",
+    twitter: "https://twitter.com/ArgusLabs_",
+    website: "https://argus.gg/",
+    github: "https://github.com/Argus-Labs",
     built:""
   },
   {

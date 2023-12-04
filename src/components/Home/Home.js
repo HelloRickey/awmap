@@ -32,7 +32,7 @@ class Home extends Component {
       theme: "light",
       selectedTab: 0,
       nav: ["Infras", "Games", "Maps", "Articles"],
-      frameWorks: ["All", "MUD", "Dojo","Paima","Others"],
+      frameWorks: ["All", "MUD", "Dojo","Paima","Argus","Others"],
       gameData: GameData,
     };
   }

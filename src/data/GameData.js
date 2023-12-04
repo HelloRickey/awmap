@@ -13,6 +13,7 @@ import TarochiGame from "../assets/gameicons/TarochiGame.jpg"
 import AetherSands from "../assets/gameicons/AetherSands.png"
 import BlockHeroes from "../assets/gameicons/BlockHeroes.png"
 import Rhascau from "../assets/gameicons/Rhascau.jpg"
+import DarkFrontier from "../assets/gameicons/DarkFrontier.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -111,5 +112,12 @@ const GameData = [{
     twitter:"https://twitter.com/rhascau",
     website:"https://www.rhascau.com/",
     engine:"Others"
+},{
+    icon:DarkFrontier,
+    name:"Dark Frontier",
+    description:"Fully onchain, zero-knowledge space conquest MMORTS Dark Forest-inspired game.",
+    twitter:"https://twitter.com/DarkFrontierGG",
+    website:"https://darkfrontier.gg/",
+    engine:"Argus"
 }];
 export default GameData;
