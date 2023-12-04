@@ -32,7 +32,7 @@ class Home extends Component {
       theme: "light",
       selectedTab: 0,
       nav: ["Infras", "Games", "Maps", "Articles"],
-      frameWorks: ["All", "MUD", "Dojo","Paima","Argus","Others"],
+      frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus", "Others"],
       gameData: GameData,
     };
   }
@@ -199,28 +199,29 @@ class Home extends Component {
               <div className="Infra">
                 <div className="InfraHeader">
                   <img src={item.icon} className="InfraImage" />
-              
-                    {item.built != "" ? (
+
+                  {item.built != "" ? (
                     <div className="InfraName">
-                    <a href={item.website} target="_blank">
-                      {item.name}
-                    </a>
-                    <a className="InfraBuilt" href={item.built.link} target="_blank">
+                      <a href={item.website} target="_blank">
+                        {item.name}
+                      </a>
+                      <a
+                        className="InfraBuilt"
+                        href={item.built.link}
+                        target="_blank"
+                      >
                         <img src={item.built.icon} width={18} />
                         &nbsp;
                         <div> Built by {item.built.name}</div>
-                        
                       </a>
                     </div>
-                    ) : (
-                      <div className="InfraName">
-                    <a href={item.website} target="_blank">
-                      {item.name}
-                    </a>
-                  </div>
-                    )}
-                    
-                          
+                  ) : (
+                    <div className="InfraName">
+                      <a href={item.website} target="_blank">
+                        {item.name}
+                      </a>
+                    </div>
+                  )}
                 </div>
                 <p className="InfraDescription">{item.description}</p>
               </div>
@@ -284,9 +285,16 @@ class Home extends Component {
               <div className="GamesHeader">
                 <img src={item.icon} className="GamesImage" />
                 <div className="GamesName">
-                  <a href={item.website} target="_blank">
-                    {item.name}
-                  </a>
+                  <div>
+                    <a href={item.website} target="_blank">
+                      {item.name}
+                    </a>
+                  </div>
+                  <div hidden={item.tag == undefined} className="GameTag">
+                    <a href={item.tagLink} target="_blank">
+                      {item.tag}
+                    </a>
+                  </div>
                 </div>
               </div>
               <p className="GamesDescription">{item.description}</p>

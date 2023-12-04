@@ -261,11 +261,22 @@ body{
     height: 48px;
 }
 .GamesName{
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
     font-size: 16px;
-
-    height: 48px;
-    line-height: 48px;
+    display: flex;
     margin-left: 10px;
+}
+.GameTag{
+    /* background: ; */
+}
+.GameTag a{
+    font-size: 12px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: 2px 2px;
+    border-radius: 2px;
 }
 .GamesDescription{
     display: flex;

@@ -20,6 +20,8 @@ const GameData = [{
     description:"Sky Strife is an onchain game built on MUD. It features fast-paced RTS combat in a battle to see who can escape with the Ember Crown.",
     twitter:"https://twitter.com/skystrifeHQ",
     website:"https://skystrife.xyz/",
+    tag:"🏆 World Sky League",
+    tagLink:"https://x.com/WASD_0x/status/1731755317799838108?s=20",
     engine:"MUD"
 },{
     icon:Primodium,
