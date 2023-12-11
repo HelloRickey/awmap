@@ -14,6 +14,7 @@ import AetherSands from "../assets/gameicons/AetherSands.png"
 import BlockHeroes from "../assets/gameicons/BlockHeroes.png"
 import Rhascau from "../assets/gameicons/Rhascau.jpg"
 import DarkFrontier from "../assets/gameicons/DarkFrontier.jpg"
+import Solace from "../assets/gameicons/Solace.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -121,5 +122,12 @@ const GameData = [{
     twitter:"https://twitter.com/DarkFrontierGG",
     website:"https://darkfrontier.gg/",
     engine:"Argus"
+},{
+    icon:Solace,
+    name:"Solace",
+    description:"Solace is a fully on-chain game that combines open world exploration, resource mining, and PVP plundering.",
+    twitter:"https://twitter.com/PTADAOFOC",
+    website:"https://flowus.cn/share/bd97eb2e-a645-42a0-a65c-1ce7b47f9a34",
+    engine:"MUD"
 }];
 export default GameData;
