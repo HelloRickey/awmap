@@ -124,8 +124,8 @@ const GameData = [{
     engine:"Argus"
 },{
     icon:Solace,
-    name:"Solace",
-    description:"Solace is a fully on-chain game that combines open world exploration, resource mining, and PVP plundering.",
+    name:"Imminent Solace",
+    description:"Imminent Solace is a fully on-chain game that combines open world exploration, resource mining, and PVP plundering.",
     twitter:"https://twitter.com/PTADAOFOC",
     website:"https://flowus.cn/share/bd97eb2e-a645-42a0-a65c-1ce7b47f9a34",
     engine:"MUD"
