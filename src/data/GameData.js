@@ -15,6 +15,7 @@ import BlockHeroes from "../assets/gameicons/BlockHeroes.png"
 import Rhascau from "../assets/gameicons/Rhascau.jpg"
 import DarkFrontier from "../assets/gameicons/DarkFrontier.jpg"
 import Solace from "../assets/gameicons/Solace.png"
+import Mississippi from "../assets/gameicons/Mississippi.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -129,5 +130,12 @@ const GameData = [{
     twitter:"https://twitter.com/PTADAOFOC",
     website:"https://flowus.cn/share/bd97eb2e-a645-42a0-a65c-1ce7b47f9a34",
     engine:"MUD"
+},{
+    icon:Mississippi,
+    name:"Mississippi",
+    description:"PVP Roguelike Fully On-chain Game.",
+    twitter:"https://twitter.com/0xMississippi",
+    website:"https://0xmssp.xyz/",
+    engine:"Other"
 }];
 export default GameData;
