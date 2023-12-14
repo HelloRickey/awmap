@@ -148,6 +148,12 @@ const TreeData = [
                     link: "https://github.com/dojoengine/dojo-starter-unity",
                     sub: [],
                   },
+                  {
+                    icon: GithubIcon,
+                    title: "Dojo Unity",
+                    link: "https://github.com/dojoengine/dojo.unity",
+                    sub: [],
+                  },
                 ],
               },
               {
