@@ -39,7 +39,7 @@ const InfraData = [
     name: "Dojo",
     description:
       "Dojo is a provable game engine and toolchain for building onchain games and autonomous worlds with Cairo",
-    twitter: "https://twitter.com/dojostarknet",
+    twitter: "https://twitter.com/ohayo_dojo",
     website: "https://dojoengine.com/",
     github: "https://github.com/dojoengine/dojo",
     built:""
