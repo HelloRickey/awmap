@@ -16,6 +16,7 @@ import Rhascau from "../assets/gameicons/Rhascau.jpg"
 import DarkFrontier from "../assets/gameicons/DarkFrontier.jpg"
 import Solace from "../assets/gameicons/Solace.png"
 import Mississippi from "../assets/gameicons/Mississippi.jpg"
+import ChainChess from "../assets/gameicons/ChainChess.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -136,6 +137,13 @@ const GameData = [{
     description:"PVP Roguelike Fully On-chain Game.",
     twitter:"https://twitter.com/0xMississippi",
     website:"https://0xmssp.xyz/",
+    engine:"Other"
+},{
+    icon:ChainChess,
+    name:"Chain Chess",
+    description:"A multiplayer onchain strategy game.",
+    twitter:"https://twitter.com/chainchess_xyz",
+    website:"https://chainchess.xyz/",
     engine:"Other"
 }];
 export default GameData;
