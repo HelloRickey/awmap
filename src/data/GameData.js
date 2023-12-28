@@ -23,7 +23,7 @@ const GameData = [{
     description:"Sky Strife is an onchain game built on MUD. It features fast-paced RTS combat in a battle to see who can escape with the Ember Crown.",
     twitter:"https://twitter.com/skystrifeHQ",
     website:"https://skystrife.xyz/",
-    tag:"🏆 World Sky League",
+    // tag:"🏆 World Sky League",
     tagLink:"https://x.com/WASD_0x/status/1731755317799838108?s=20",
     engine:"MUD"
 },{
@@ -137,13 +137,13 @@ const GameData = [{
     description:"PVP Roguelike Fully On-chain Game.",
     twitter:"https://twitter.com/0xMississippi",
     website:"https://0xmssp.xyz/",
-    engine:"Other"
+    engine:"Others"
 },{
     icon:ChainChess,
     name:"Chain Chess",
     description:"A multiplayer onchain strategy game.",
     twitter:"https://twitter.com/chainchess_xyz",
     website:"https://chainchess.xyz/",
-    engine:"Other"
+    engine:"Others"
 }];
 export default GameData;
