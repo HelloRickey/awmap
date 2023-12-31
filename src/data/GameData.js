@@ -17,6 +17,7 @@ import DarkFrontier from "../assets/gameicons/DarkFrontier.jpg"
 import Solace from "../assets/gameicons/Solace.png"
 import Mississippi from "../assets/gameicons/Mississippi.jpg"
 import ChainChess from "../assets/gameicons/ChainChess.png"
+import LootUnderWorld from "../assets/gameicons/LootUnderWorld.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -144,6 +145,13 @@ const GameData = [{
     description:"A multiplayer onchain strategy game.",
     twitter:"https://twitter.com/chainchess_xyz",
     website:"https://chainchess.xyz/",
+    engine:"Others"
+},{
+    icon:LootUnderWorld,
+    name:"Loot Under World",
+    description:"An autonomous (under)world occupying the liminal spaces beneath and between.",
+    twitter:"https://twitter.com/LootUnderworld",
+    website:"https://lootunder.world/",
     engine:"Others"
 }];
 export default GameData;
