@@ -85,10 +85,21 @@ const TreeData = [
                     title: "MUD VRF",
                     link: "https://github.com/succinctlabs/mudvrf",
                     sub: [],
-                  },                  {
+                  },
+                  {
                     icon: GithubIcon,
                     title: "MUD 2048",
                     link: "https://github.com/themetacat/MUD2048",
+                    sub: [],
+                  },{
+                    icon: GithubIcon,
+                    title: "Auto Chessia",
+                    link: "https://github.com/HelheimLabs/autochessia",
+                    sub: [],
+                  },{
+                    icon: GithubIcon,
+                    title: "Sky Strife ",
+                    link: "https://github.com/latticexyz/skystrife-public",
                     sub: [],
                   },
                 ],
@@ -100,7 +111,8 @@ const TreeData = [
                 sub: [
                   {
                     icon: VideoIcon,
-                    title: "How we built MUD An On chain Kernel for Complex Applications",
+                    title:
+                      "How we built MUD An On chain Kernel for Complex Applications",
                     link: "https://www.youtube.com/watch?v=gQzZyWw71bo&list=PLX8x7Zj6VeznJuVkZtRyKwseJdrr4mNsE",
                     sub: [],
                   },
@@ -154,6 +166,18 @@ const TreeData = [
                     link: "https://github.com/dojoengine/dojo.unity",
                     sub: [],
                   },
+                  {
+                    icon: GithubIcon,
+                    title: "PixeLAW 2048",
+                    link: "https://github.com/themetacat/PixeLAW2048",
+                    sub: [],
+                  },
+                  {
+                    icon: GithubIcon,
+                    title: "Starkane",
+                    link: "https://github.com/amegakure-starknet/starkane",
+                    sub: [],
+                  },
                 ],
               },
               {
@@ -166,7 +190,7 @@ const TreeData = [
                     title: "Dive into the Dojo system",
                     link: "https://hackmd.io/@wongssh/r1wY1cexp",
                     sub: [],
-                  }
+                  },
                 ],
               },
             ],
