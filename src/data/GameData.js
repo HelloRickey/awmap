@@ -18,6 +18,7 @@ import Solace from "../assets/gameicons/Solace.png"
 import Mississippi from "../assets/gameicons/Mississippi.jpg"
 import ChainChess from "../assets/gameicons/ChainChess.png"
 import LootUnderWorld from "../assets/gameicons/LootUnderWorld.jpg"
+import WizWorld from "../assets/gameicons/WizWorld.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -152,6 +153,13 @@ const GameData = [{
     description:"An autonomous (under)world occupying the liminal spaces beneath and between.",
     twitter:"https://twitter.com/LootUnderworld",
     website:"https://lootunder.world/",
+    engine:"Others"
+},{
+    icon:WizWorld,
+    name:"WizWorld",
+    description:"A Fully Onchain Magical World.",
+    twitter:"https://twitter.com/wizworld_xyz",
+    website:"https://wizworld.xyz/",
     engine:"Others"
 }];
 export default GameData;
