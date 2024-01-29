@@ -22,6 +22,7 @@ import WizWorld from "../assets/gameicons/WizWorld.jpg"
 import DFArchon from "../assets/gameicons/DFArchon.jpg"
 import PixeLAW from "../assets/gameicons/PixeLAW.jpg"
 import Word3 from "../assets/gameicons/Words3Community.png"
+import ForcePrimeHeroes from "../assets/gameicons/ForcePrimeHeroes.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -185,5 +186,12 @@ const GameData = [{
     twitter:"https://twitter.com/words3xyz",
     website:"https://www.words3.xyz/",
     engine:"MUD"
+},{
+    icon:ForcePrimeHeroes,
+    name:"Force Prime Heroes",
+    description:"Inspired by the Heroes of Might and Magic series. Built on the Starknet with Dojo & Unity.",
+    twitter:"https://twitter.com/ForcePrime_io",
+    website:"https://forceprime.io/",
+    engine:"Dojo"
 }];
 export default GameData;

@@ -101,7 +101,12 @@ const TreeData = [
                     title: "Sky Strife ",
                     link: "https://github.com/latticexyz/skystrife-public",
                     sub: [],
-                  },
+                  },{
+                    icon: GithubIcon,
+                    title: "UniMUD",
+                    link: "https://github.com/emergenceland/UniMUD",
+                    sub: [],
+                  }
                 ],
               },
               {
@@ -124,8 +129,13 @@ const TreeData = [
                   },
                   {
                     icon: VideoIcon,
-                    title: "Videos from our MUD Local event in NYC",
-                    link: "https://www.youtube.com/playlist?list=PL_97Yn8lCzTIWvxyvWWTdawCcmfscJxF0",
+                    title: "Build an Onchain Game in One Hour with MUD ✧ alvarius ✧ Assembly 2023",
+                    link: "https://www.youtube.com/watch?v=pla6wfWN7tE",
+                    sub: [],
+                  },{
+                    icon: VideoIcon,
+                    title: "Autonomous Worlds Assembly 2023",
+                    link: "https://www.youtube.com/playlist?list=PLZAxQO5qOAFYmP8T2pE-LihtVWbbgpCjR",
                     sub: [],
                   },
                 ],
