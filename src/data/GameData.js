@@ -19,6 +19,9 @@ import Mississippi from "../assets/gameicons/Mississippi.jpg"
 import ChainChess from "../assets/gameicons/ChainChess.png"
 import LootUnderWorld from "../assets/gameicons/LootUnderWorld.jpg"
 import WizWorld from "../assets/gameicons/WizWorld.jpg"
+import DFArchon from "../assets/gameicons/DFArchon.jpg"
+import PixeLAW from "../assets/gameicons/PixeLAW.jpg"
+import Word3 from "../assets/gameicons/Words3Community.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -161,5 +164,26 @@ const GameData = [{
     twitter:"https://twitter.com/wizworld_xyz",
     website:"https://wizworld.xyz/",
     engine:"Others"
+},{
+    icon:DFArchon,
+    name:"Dark Forest",
+    description:"Dark Forest ARES v0.1 Round 2: Pinkship.",
+    twitter:"https://twitter.com/DFArchon",
+    website:"https://dfarchon.xyz/",
+    engine:"Others"
+},{
+    icon:PixeLAW,
+    name:"PixeLAW",
+    description:"PixeLAW is a pixel-based Autonomous World built on Starknet using dojo",
+    twitter:"https://twitter.com/0xPixeLAW",
+    website:"https://demo.pixelaw.xyz/",
+    engine:"Dojo"
+},{
+    icon:Word3,
+    name:"Words3 Community",
+    description:"Small brain games words3",
+    twitter:"https://twitter.com/words3xyz",
+    website:"https://www.words3.xyz/",
+    engine:"MUD"
 }];
 export default GameData;

@@ -379,6 +379,50 @@ body{
     text-decoration: underline;
 }
 
+.Guiders{
+    display: flex;
+    flex-wrap: wrap;
+}
+.GuidersHeader{
+    align-items: center;
+    display: flex
+    
+}
+.GuidersHeader p{
+    font-size: 16px;
+
+    margin-left: 10px;
+}
+.GuidersHeader p a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.GuidersHeader p a:hover{
+    text-decoration: underline;
+}
+.Guiders li{
+    width: 176px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    border-radius: 4px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.GuidersTags{
+    display: flex;
+    margin-top: 14px;
+}
+.GuidersTag{
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin-right: 4px;
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+
 @media only screen and (max-width: 576px) {
     .HubNav{
         display: none;
@@ -406,6 +450,10 @@ body{
     }
     .GamesMenu{
         margin-top: 10px;
+    }
+    .Guiders li{
+        width: 100%;
+        margin-right: 0px;
     }
 }
 

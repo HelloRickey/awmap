@@ -25,13 +25,15 @@ import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 import menuLight from "../../assets/menu_light.svg";
 import menuDark from "../../assets/menu_dark.svg";
 
+import { Guiders} from "../../data/GuiderData";
+
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       theme: "light",
       selectedTab: 0,
-      nav: ["Infras", "Games", "Maps", "Articles"],
+      nav: ["Infras", "Games", "Maps","Explorers","Articles"],
       frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus", "Others"],
       gameData: GameData,
     };
@@ -40,17 +42,17 @@ class Home extends Component {
   async componentDidMount() {
     if (
       localStorage.getItem("theme") == null ||
-      localStorage.getItem("theme") == "light"
+      localStorage.getItem("theme") == "dark"
     ) {
-      this.setState({
-        theme: "light",
-      });
-      document.body.setAttribute("theme", "");
-    } else {
       this.setState({
         theme: "dark",
       });
       document.body.setAttribute("theme", "dark");
+    } else {
+      this.setState({
+        theme: "light",
+      });
+      document.body.setAttribute("theme", "");
     }
   }
 
@@ -186,8 +188,6 @@ class Home extends Component {
             <span>Rickey</span>
           </a>
         </div>
-
-
 
         <div className="CategoryTitle" id="Infras">
           Infras
@@ -346,6 +346,38 @@ class Home extends Component {
         </div>
 
         <Tree></Tree>
+
+        <div className="CategoryTitle" id="Explorers">
+          Explorers
+        </div>
+        <div className="CategoryIntroduce">
+          They publish news, guide new games, and hold events.
+        </div>
+
+        <ul className="Guiders">
+          {Guiders.map((guide, guideIndex) => (
+            <li key={guideIndex}>
+              <div className="GuidersHeader">
+                <img src={guide.icon} width={32} />
+                <p>
+                  <a href={guide.twitter} target="_blank">
+                    {guide.name}
+                  </a>
+                </p>
+              </div>
+              <div className="GuidersTags">
+                {guide.tags.map((tag, tagIndex) => (
+                  <div
+                    key={tagIndex}
+                    className="GuidersTag"
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
 
         <div className="CategoryTitle" id="Articles">
           Articles
