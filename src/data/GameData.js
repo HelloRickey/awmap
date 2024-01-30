@@ -19,7 +19,7 @@ import Mississippi from "../assets/gameicons/Mississippi.jpg"
 import ChainChess from "../assets/gameicons/ChainChess.png"
 import LootUnderWorld from "../assets/gameicons/LootUnderWorld.jpg"
 import WizWorld from "../assets/gameicons/WizWorld.jpg"
-import DFArchon from "../assets/gameicons/DFArchon.jpg"
+import DFArchon from "../assets/gameicons/DFArchon.png"
 import PixeLAW from "../assets/gameicons/PixeLAW.jpg"
 import Word3 from "../assets/gameicons/Words3Community.png"
 import ForcePrimeHeroes from "../assets/gameicons/ForcePrimeHeroes.png"
@@ -167,7 +167,7 @@ const GameData = [{
     engine:"Others"
 },{
     icon:DFArchon,
-    name:"Dark Forest",
+    name:"Dark Forest Ares",
     description:"Dark Forest ARES v0.1 Round 2: Pinkship.",
     twitter:"https://twitter.com/DFArchon",
     website:"https://dfarchon.xyz/",

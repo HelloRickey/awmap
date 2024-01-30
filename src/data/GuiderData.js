@@ -8,6 +8,7 @@ import ordengg from "../assets/guiders/ordengg.jpg"
 import ggQuest from "../assets/guiders/ggQuest.jpg"
 import Worlds from "../assets/guiders/WORLDS.jpg"
 import Metacat from "../assets/guiders/metacat.jpg"
+import TheHerald from "../assets/guiders/TheHerald.jpg"
 export const Guiders = [
   {
     icon: WASD,
@@ -63,5 +64,10 @@ export const Guiders = [
     name: "Meta Cat",
     tags:["Research", "Community"],
     twitter: "https://twitter.com/Metacat007",
+  },{
+    icon: TheHerald,
+    name: "The Herald",
+    tags:["News", "Research"],
+    twitter: "https://twitter.com/heraldofloot",
   },
 ];
