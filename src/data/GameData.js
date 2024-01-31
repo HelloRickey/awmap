@@ -23,6 +23,7 @@ import DFArchon from "../assets/gameicons/DFArchon.png"
 import PixeLAW from "../assets/gameicons/PixeLAW.jpg"
 import Word3 from "../assets/gameicons/Words3Community.png"
 import ForcePrimeHeroes from "../assets/gameicons/ForcePrimeHeroes.png"
+import TENET from "../assets/gameicons/TENET.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -193,5 +194,12 @@ const GameData = [{
     twitter:"https://twitter.com/ForcePrime_io",
     website:"https://forceprime.io/",
     engine:"Dojo"
+},{
+    icon:TENET,
+    name:"TENET",
+    description:"Create and Play Onchain Sandboxes. ",
+    twitter:"https://twitter.com/tenetxyz",
+    website:"https://tenet.aw/",
+    engine:"MUD"
 }];
 export default GameData;
