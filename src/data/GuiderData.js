@@ -9,6 +9,7 @@ import ggQuest from "../assets/guiders/ggQuest.jpg"
 import Worlds from "../assets/guiders/WORLDS.jpg"
 import Metacat from "../assets/guiders/metacat.jpg"
 import TheHerald from "../assets/guiders/TheHerald.jpg"
+import AutonomousAnonymous from "../assets/guiders/AutonomousAnonymous.jpg"
 export const Guiders = [
   {
     icon: WASD,
@@ -69,5 +70,10 @@ export const Guiders = [
     name: "The Herald",
     tags:["News", "Research"],
     twitter: "https://twitter.com/heraldofloot",
+  },{
+    icon: AutonomousAnonymous,
+    name: "Autonomous Anonymous",
+    tags:["Community", "Event"],
+    twitter: "https://twitter.com/Worlds_AA",
   },
 ];
