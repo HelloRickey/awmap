@@ -6,5 +6,12 @@ export const Events = [
     organizer:"Anonymous Autonomous",
     link:"https://aaworlds.com/",
     twitter:"https://twitter.com/Worlds_AA"
+  },  {
+    title: "Hacker House in Denver",
+    date: "Feb 28 to March 4th",
+    location:"Ogden St, Denver",
+    organizer:"AW House & Komorebi",
+    link:"https://aw.house/hackerhouse/denver2024",
+    twitter:"https://twitter.com/AW_house"
   }
 ];

@@ -188,7 +188,13 @@ body{
 .EventsDate span,.EventsLocation span{
     color: var(--main-color);
 }
+.PresentedBy{
+    width: 350px;
+}
 
+.EventsDate,.EventsLocation{
+    width: 250px;
+}
 .PresentedBy a{
     color: var(--main-color);
 }
