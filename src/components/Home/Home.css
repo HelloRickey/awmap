@@ -152,6 +152,47 @@ body{
     color: var(--main-color);
     margin-bottom: 20px;
 }
+
+.Events{
+    
+}
+
+.Events li{
+    margin-right: 18px;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(100% - 58px);
+}
+
+.EventsTitle a{
+    font-size: 18px;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.EventsTitle a:hover{
+    text-decoration: underline;
+}
+.EventsDateAndLocation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.PresentedBy,.EventsDate,.EventsLocation{
+    color: var(--second-color);
+}
+
+.EventsDate span,.EventsLocation span{
+    color: var(--main-color);
+}
+
+.PresentedBy a{
+    color: var(--main-color);
+}
+
 .Infras{
     display: flex;
     flex-wrap: wrap;
@@ -239,13 +280,12 @@ body{
    
 }
 .Games li{
-
+    margin-right: 18px;
     width: 100%;
     border: 2px solid var(--border-color);
     background: var(--bg-color);
     border-radius: 4px;
     padding: 20px;
-    margin-right: 18px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -437,6 +477,13 @@ body{
     }
     .HubBanner h2{
         font-size: 22px;
+    }
+    .Events li{
+        margin-right: 0px;
+        width:  calc(100% - 44px);
+    }
+    .EventsDateAndLocation{
+        flex-direction: column;
     }
     .Infras li{
         margin-right: 0px;

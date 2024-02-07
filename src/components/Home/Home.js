@@ -25,7 +25,9 @@ import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 import menuLight from "../../assets/menu_light.svg";
 import menuDark from "../../assets/menu_dark.svg";
 
-import { Guiders} from "../../data/GuiderData";
+import { Guiders } from "../../data/GuiderData";
+
+import { Events } from "../../data/Events";
 
 class Home extends Component {
   constructor(props) {
@@ -33,7 +35,7 @@ class Home extends Component {
     this.state = {
       theme: "light",
       selectedTab: 0,
-      nav: ["Infras", "Games", "Maps","Explorers","Articles"],
+      nav: ["Events","Infras", "Games", "Maps", "Explorers", "Articles"],
       frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus", "Others"],
       gameData: GameData,
     };
@@ -188,6 +190,39 @@ class Home extends Component {
             <span>Rickey</span>
           </a>
         </div>
+
+        <div className="CategoryTitle" id="Events">
+          Events
+        </div>
+        <div className="CategoryIntroduce">
+        Attend the latest meetups, gaming competitions, hackathons.
+        </div>
+        <ul className="Events">
+          {Events.map((item, index) => (
+            <li key={index}>
+              <div className="EventsTitle">
+                <a href={item.link} target="_blank">
+                  {item.title}
+                </a>
+              </div>
+
+              <div className="EventsDateAndLocation">
+                <div className="PresentedBy">
+                  Presented by&nbsp;
+                  <a href={item.twitter} target="_blank">
+                    {item.organizer}
+                  </a>
+                </div>
+                <div className="EventsDate">
+                  Dates:<span>{item.date}</span>
+                </div>
+                <div className="EventsLocation">
+                  Location:<span>{item.location}</span>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
 
         <div className="CategoryTitle" id="Infras">
           Infras
@@ -367,10 +402,7 @@ class Home extends Component {
               </div>
               <div className="GuidersTags">
                 {guide.tags.map((tag, tagIndex) => (
-                  <div
-                    key={tagIndex}
-                    className="GuidersTag"
-                  >
+                  <div key={tagIndex} className="GuidersTag">
                     {tag}
                   </div>
                 ))}
