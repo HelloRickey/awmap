@@ -53,7 +53,7 @@ const GameData = [{
     description:"Foundational infrastructure and applications powering next-gen onchain games.",
     twitter:"https://twitter.com/DownstreamGame",
     website:"https://downstream.game/",
-    engine:"MUD"
+    engine:"Others"
 },{
     icon:Gaul,
     name:"Gaul",
