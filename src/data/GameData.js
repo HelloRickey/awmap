@@ -24,7 +24,7 @@ import PixeLAW from "../assets/gameicons/PixeLAW.jpg"
 import Word3 from "../assets/gameicons/Words3Community.png"
 import ForcePrimeHeroes from "../assets/gameicons/ForcePrimeHeroes.png"
 import TENET from "../assets/gameicons/TENET.jpg"
-import OnchainClash from "../assets/gameicons/onchainclash.jpg"
+import OnchainClash from "../assets/gameicons/OnchainClash.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
