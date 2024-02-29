@@ -16,7 +16,7 @@ import Dojo from "../assets/treeicons/dojo.svg";
 import Mud from "../assets/treeicons/mud.png";
 import Curio from "../assets/treeicons/curio.svg";
 import Redstone from "../assets/treeicons/redstone.png";
-const TreeData = [
+const MapData = [
   {
     icon: WorldIcon,
     title: "Autonomous World",
@@ -229,4 +229,4 @@ const TreeData = [
     ],
   },
 ];
-export default TreeData;
+export default MapData;

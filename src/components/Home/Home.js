@@ -25,9 +25,9 @@ import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 import menuLight from "../../assets/menu_light.svg";
 import menuDark from "../../assets/menu_dark.svg";
 
-import { Guiders } from "../../data/GuiderData";
+import { Explorers } from "../../data/ExplorerData";
 
-import { Events } from "../../data/Events";
+import { Events } from "../../data/EventData";
 
 class Home extends Component {
   constructor(props) {
@@ -173,7 +173,7 @@ class Home extends Component {
           <h2>A curated list of AW and fully onchain games</h2>
 
           <a
-            href="https://twitter.com/intent/tweet?text=Hey%20@awmap_xyz,%20please%20add%20it%20to%20the%20autonomous%20world%20map:"
+            href="https://github.com/HelloRickey/awmap"
             target="_blank"
             className="HubBannerSubmit"
           >
@@ -389,10 +389,10 @@ class Home extends Component {
           They publish news, guide new games, and hold events.
         </div>
 
-        <ul className="Guiders">
-          {Guiders.map((guide, guideIndex) => (
+        <ul className="Explorers">
+          {Explorers.map((guide, guideIndex) => (
             <li key={guideIndex}>
-              <div className="GuidersHeader">
+              <div className="ExplorersHeader">
                 <img src={guide.icon} width={32} />
                 <p>
                   <a href={guide.twitter} target="_blank">
@@ -400,9 +400,9 @@ class Home extends Component {
                   </a>
                 </p>
               </div>
-              <div className="GuidersTags">
+              <div className="ExplorersTags">
                 {guide.tags.map((tag, tagIndex) => (
-                  <div key={tagIndex} className="GuidersTag">
+                  <div key={tagIndex} className="ExplorersTag">
                     {tag}
                   </div>
                 ))}

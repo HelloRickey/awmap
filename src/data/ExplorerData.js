@@ -10,7 +10,7 @@ import Worlds from "../assets/guiders/WORLDS.jpg"
 import Metacat from "../assets/guiders/metacat.jpg"
 import TheHerald from "../assets/guiders/TheHerald.jpg"
 import AutonomousAnonymous from "../assets/guiders/AutonomousAnonymous.jpg"
-export const Guiders = [
+export const Explorers = [
   {
     icon: WASD,
     name: "WASD",

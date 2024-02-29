@@ -425,28 +425,28 @@ body{
     text-decoration: underline;
 }
 
-.Guiders{
+.Explorers{
     display: flex;
     flex-wrap: wrap;
 }
-.GuidersHeader{
+.ExplorersHeader{
     align-items: center;
     display: flex
     
 }
-.GuidersHeader p{
+.ExplorersHeader p{
     font-size: 16px;
 
     margin-left: 10px;
 }
-.GuidersHeader p a{
+.ExplorersHeader p a{
     color: var(--main-color);
     text-decoration: none;
 }
-.GuidersHeader p a:hover{
+.ExplorersHeader p a:hover{
     text-decoration: underline;
 }
-.Guiders li{
+.Explorers li{
     width: 176px;
     border: 2px solid var(--border-color);
     background: var(--bg-color);
@@ -456,11 +456,11 @@ body{
     margin-bottom: 20px;
 }
 
-.GuidersTags{
+.ExplorersTags{
     display: flex;
     margin-top: 14px;
 }
-.GuidersTag{
+.ExplorersTag{
     font-size: 12px;
     padding: 2px 4px;
     border-radius: 2px;

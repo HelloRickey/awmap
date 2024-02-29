@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Tree.css";
-import TreeData from "../../data/TreeData";
+import MapData from "../../data/MapData";
 import LinkIcon from "../../assets/link.svg";
 function Tree(props) {
   //   const [tags, setTags] = useState([]);
@@ -12,7 +12,7 @@ function Tree(props) {
   return (
     <div className="Tree">
       <ul>
-        {TreeData.map((item, index) => (
+        {MapData.map((item, index) => (
           <li key={index}>
             <div className="TreeNode">
               <img src={item.icon} className="TreeIcon" />
