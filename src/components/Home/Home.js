@@ -29,13 +29,16 @@ import { Explorers } from "../../data/ExplorerData";
 
 import { Events } from "../../data/EventData";
 
+import githubSumitLight from "../../assets/github_sumit_light.svg"
+import githubSumitDark from "../../assets/github_sumit_dark.svg"
+
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       theme: "light",
       selectedTab: 0,
-      nav: ["Events","Infras", "Games", "Maps", "Explorers", "Articles"],
+      nav: ["Events", "Infras", "Games", "Maps", "Explorers", "Articles"],
       frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus", "Others"],
       gameData: GameData,
     };
@@ -177,6 +180,12 @@ class Home extends Component {
             target="_blank"
             className="HubBannerSubmit"
           >
+            {this.state.theme == "light" ? (
+              <img src={githubSumitLight} width={22} />
+            ) : (
+              <img src={githubSumitDark} width={22} />
+            )}
+            &nbsp;
             Submit
           </a>
           <a
@@ -195,7 +204,7 @@ class Home extends Component {
           Events
         </div>
         <div className="CategoryIntroduce">
-        Attend the latest meetups, gaming competitions, hackathons.
+          Attend the latest meetups, gaming competitions, hackathons.
         </div>
         <ul className="Events">
           {Events.map((item, index) => (

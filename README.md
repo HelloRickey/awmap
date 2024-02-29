@@ -13,8 +13,8 @@ yarn start
 
 [View Deployed Website](https://awmap.xyz/)   
 
-### Create a New Project
-
+### Add a New Project
+Modify the following files to add your project.   
 - [Event](./src/data/EventData.js): Attend the latest meetups, gaming competitions, hackathons.
 - [Infra](./src/data/InfraData.js): Layer2 Network, development framework, game engine.
 - [Game](./src/data/GameData.js): Fully onchain and playable games.
