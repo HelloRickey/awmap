@@ -13,5 +13,12 @@ export const Events = [
     organizer:"AW House & Komorebi",
     link:"https://aw.house/hackerhouse/denver2024",
     twitter:"https://twitter.com/AW_house"
+  },  {
+    title: "AW DAY @AWR X Komorebi's Hacker House",
+    date: "Mar 14",
+    location:"London, England",
+    organizer:"AW Research and AW House",
+    link:"https://lu.ma/AWDAYLONDON",
+    twitter:"https://twitter.com/AW_Research"
   }
 ];
