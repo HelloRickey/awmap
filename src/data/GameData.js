@@ -25,6 +25,7 @@ import Word3 from "../assets/gameicons/Words3Community.png"
 import ForcePrimeHeroes from "../assets/gameicons/ForcePrimeHeroes.png"
 import TENET from "../assets/gameicons/TENET.jpg"
 import OnchainClash from "../assets/gameicons/OnchainClash.jpg"
+import Trivia from "../assets/gameicons/Trivia.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -208,6 +209,13 @@ const GameData = [{
     description:"A fully onchain game, seamlessly blending territorial claims and expansion dynamics inspired by Pixel War and Go Game.",
     twitter:"https://twitter.com/OnchainClash",
     website:"https://onchainclash.io/",
+    engine:"Others"
+},{
+    icon:Trivia,
+    name:"Trivia",
+    description:"On-chain multiplayer quiz game on mobile designed with innovative gamified minting experience for Web3 lovers.",
+    twitter:"https://twitter.com/triviatech_gg",
+    website:"https://triviatech.gg/",
     engine:"Others"
 }];
 export default GameData;
