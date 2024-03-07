@@ -91,22 +91,25 @@ const MapData = [
                     title: "MUD 2048",
                     link: "https://github.com/themetacat/MUD2048",
                     sub: [],
-                  },{
+                  },
+                  {
                     icon: GithubIcon,
                     title: "Auto Chessia",
                     link: "https://github.com/HelheimLabs/autochessia",
                     sub: [],
-                  },{
+                  },
+                  {
                     icon: GithubIcon,
                     title: "Sky Strife ",
                     link: "https://github.com/latticexyz/skystrife-public",
                     sub: [],
-                  },{
+                  },
+                  {
                     icon: GithubIcon,
                     title: "UniMUD",
                     link: "https://github.com/emergenceland/UniMUD",
                     sub: [],
-                  }
+                  },
                 ],
               },
               {
@@ -129,13 +132,21 @@ const MapData = [
                   },
                   {
                     icon: VideoIcon,
-                    title: "Build an Onchain Game in One Hour with MUD ✧ alvarius ✧ Assembly 2023",
+                    title:
+                      "Build an Onchain Game in One Hour with MUD ✧ alvarius ✧ Assembly 2023",
                     link: "https://www.youtube.com/watch?v=pla6wfWN7tE",
                     sub: [],
-                  },{
+                  },
+                  {
                     icon: VideoIcon,
                     title: "Autonomous Worlds Assembly 2023",
                     link: "https://www.youtube.com/playlist?list=PLZAxQO5qOAFYmP8T2pE-LihtVWbbgpCjR",
+                    sub: [],
+                  },
+                  {
+                    icon: ArticleIcon,
+                    title: "MUD modules 101 (1/2) Installation",
+                    link: "https://mirror.xyz/nakaj1ma.eth/2-EGTzoYly4bbfgIdXXGHBmYcWNnFuTHSrRpCTerlsI",
                     sub: [],
                   },
                 ],
