@@ -5,6 +5,7 @@ import curio from "../assets/infraicons/curio.svg";
 import mud from "../assets/infraicons/mud.png";
 import redstone from "../assets/infraicons/redstone.png";
 import argus from "../assets/infraicons/argus.jpg"
+import zeko from "../assets/infraicons/zeko.png"
 const InfraData = [
   {
     icon: mud,
@@ -71,6 +72,15 @@ const InfraData = [
     twitter: "https://twitter.com/0xcurio",
     website: "https://www.curio.gg/",
     github: "https://github.com/curio-research/keystone",
+    built:""
+  },{
+    icon: zeko,
+    name: "Zeko",
+    description:
+      "Zeko is the premier zero-knowledge scaling protocol, built on Mina and designed for developers shaping the future of finance, AI, and gaming.",
+    twitter: "https://twitter.com/ZekoLabs",
+    website: "https://zeko.io/",
+    github: "https://github.com/zeko-labs/zeko",
     built:""
   },
 ];
