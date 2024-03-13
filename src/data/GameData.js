@@ -219,13 +219,6 @@ const GameData = [{
     website:"https://triviatech.gg/",
     engine:"Others"
 },{
-    icon:Trivia,
-    name:"Trivia",
-    description:"On-chain multiplayer quiz game on mobile designed with innovative gamified minting experience for Web3 lovers.",
-    twitter:"https://twitter.com/triviatech_gg",
-    website:"https://triviatech.gg/",
-    engine:"Others"
-},{
     icon:Awakening,
     name:"Awakening",
     description:"A single-shard survival experience set in the EVE Universe.",
