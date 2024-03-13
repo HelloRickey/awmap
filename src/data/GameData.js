@@ -26,6 +26,7 @@ import ForcePrimeHeroes from "../assets/gameicons/ForcePrimeHeroes.png"
 import TENET from "../assets/gameicons/TENET.jpg"
 import OnchainClash from "../assets/gameicons/OnchainClash.jpg"
 import Trivia from "../assets/gameicons/Trivia.jpg"
+import Awakening from "../assets/gameicons/Awakening.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -217,5 +218,19 @@ const GameData = [{
     twitter:"https://twitter.com/triviatech_gg",
     website:"https://triviatech.gg/",
     engine:"Others"
+},{
+    icon:Trivia,
+    name:"Trivia",
+    description:"On-chain multiplayer quiz game on mobile designed with innovative gamified minting experience for Web3 lovers.",
+    twitter:"https://twitter.com/triviatech_gg",
+    website:"https://triviatech.gg/",
+    engine:"Others"
+},{
+    icon:Awakening,
+    name:"Awakening",
+    description:"A single-shard survival experience set in the EVE Universe.",
+    twitter:"https://twitter.com/CCPGames",
+    website:"https://www.projectawakening.io/",
+    engine:"MUD"
 }];
 export default GameData;
