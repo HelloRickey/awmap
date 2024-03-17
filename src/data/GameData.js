@@ -27,6 +27,8 @@ import TENET from "../assets/gameicons/TENET.jpg"
 import OnchainClash from "../assets/gameicons/OnchainClash.jpg"
 import Trivia from "../assets/gameicons/Trivia.jpg"
 import Awakening from "../assets/gameicons/Awakening.png"
+import BomberWoman from "../assets/gameicons/BomberWoman.png"
+import MocsRoguelike from "../assets/gameicons/MocsRoguelike.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -224,6 +226,20 @@ const GameData = [{
     description:"A single-shard survival experience set in the EVE Universe.",
     twitter:"https://twitter.com/CCPGames",
     website:"https://www.projectawakening.io/",
+    engine:"MUD"
+},{
+    icon:BomberWoman,
+    name:"Bomber Woman",
+    description:" An onchain Bomberman, a fun simultaneous turn based game where player attempt to bomb each other.",
+    twitter:"https://twitter.com/wighawag",
+    website:"https://wighawag.github.io/bomber-woman/",
+    engine:"Others"
+},{
+    icon:MocsRoguelike,
+    name:"MOCS Roguelike",
+    description:" An onchain PVP game.",
+    twitter:"https://twitter.com/MOCS_GG",
+    website:"https://mocs-rogue-mocs.vercel.app/",
     engine:"MUD"
 }];
 export default GameData;
