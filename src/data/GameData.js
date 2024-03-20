@@ -29,6 +29,7 @@ import Trivia from "../assets/gameicons/Trivia.jpg"
 import Awakening from "../assets/gameicons/Awakening.png"
 import BomberWoman from "../assets/gameicons/BomberWoman.png"
 import MocsRoguelike from "../assets/gameicons/MocsRoguelike.jpg"
+import Mugen from "../assets/gameicons/Mugen.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -241,5 +242,12 @@ const GameData = [{
     twitter:"https://twitter.com/MOCS_GG",
     website:"https://mocs-rogue-mocs.vercel.app/",
     engine:"MUD"
+},{
+    icon:Mugen,
+    name:"Mugen Craft",
+    description:"Mugen Craft  is a Fully on chain UGC game you can create new recipes by mixing recipes with recipes.",
+    twitter:"https://twitter.com/0xBaratie",
+    website:"https://mugencraft.vercel.app/",
+    engine:"Others"
 }];
 export default GameData;
