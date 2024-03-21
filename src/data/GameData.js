@@ -31,6 +31,7 @@ import BomberWoman from "../assets/gameicons/BomberWoman.png"
 import MocsRoguelike from "../assets/gameicons/MocsRoguelike.jpg"
 import Mugen from "../assets/gameicons/Mugen.png"
 import ArkRTS from "../assets/gameicons/ArkRTS.png"
+import PAVED from "../assets/gameicons/PAVED.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -246,17 +247,17 @@ const GameData = [{
 },{
     icon:Mugen,
     name:"Mugen Craft",
-    description:"Mugen Craft  is a Fully on chain UGC game you can create new recipes by mixing recipes with recipes.",
+    description:"Mugen Craft is a Fully on chain UGC game you can create new recipes by mixing recipes with recipes.",
     twitter:"https://twitter.com/0xBaratie",
     website:"https://mugencraft.vercel.app/",
     engine:"Others"
 },{
-    icon:Mugen,
-    name:"Mugen Craft",
-    description:"Mugen Craft  is a Fully on chain UGC game you can create new recipes by mixing recipes with recipes.",
-    twitter:"https://twitter.com/0xBaratie",
-    website:"https://mugencraft.vercel.app/",
-    engine:"Others"
+    icon:PAVED,
+    name:"PAVED",
+    description:"Compete for high scores by laying tiles to form an expanding medieval landscape. Pave your way to victory in an onchain strategy game like no other.",
+    twitter:"https://twitter.com/pavedgame",
+    website:"https://paved.gg/",
+    engine:"Dojo"
 },{
     icon:ArkRTS,
     name:"Ark RTS",
