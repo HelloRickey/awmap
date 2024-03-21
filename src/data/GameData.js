@@ -30,6 +30,7 @@ import Awakening from "../assets/gameicons/Awakening.png"
 import BomberWoman from "../assets/gameicons/BomberWoman.png"
 import MocsRoguelike from "../assets/gameicons/MocsRoguelike.jpg"
 import Mugen from "../assets/gameicons/Mugen.png"
+import ArkRTS from "../assets/gameicons/ArkRTS.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -248,6 +249,20 @@ const GameData = [{
     description:"Mugen Craft  is a Fully on chain UGC game you can create new recipes by mixing recipes with recipes.",
     twitter:"https://twitter.com/0xBaratie",
     website:"https://mugencraft.vercel.app/",
+    engine:"Others"
+},{
+    icon:Mugen,
+    name:"Mugen Craft",
+    description:"Mugen Craft  is a Fully on chain UGC game you can create new recipes by mixing recipes with recipes.",
+    twitter:"https://twitter.com/0xBaratie",
+    website:"https://mugencraft.vercel.app/",
+    engine:"Others"
+},{
+    icon:ArkRTS,
+    name:"Ark RTS",
+    description:"Ark RTS is a fully onchain real-time strategy game drawing inspiration from iconic titles like Command & Conquer and Warcraft 3.",
+    twitter:"https://twitter.com/therealbytes",
+    website:"https://rts.concretelabs.dev/",
     engine:"Others"
 }];
 export default GameData;
