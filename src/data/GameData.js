@@ -32,6 +32,7 @@ import MocsRoguelike from "../assets/gameicons/MocsRoguelike.jpg"
 import Mugen from "../assets/gameicons/Mugen.png"
 import ArkRTS from "../assets/gameicons/ArkRTS.png"
 import PAVED from "../assets/gameicons/PAVED.jpg"
+import Bubblewars from "../assets/gameicons/Bubblewars.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -264,6 +265,13 @@ const GameData = [{
     description:"Ark RTS is a fully onchain real-time strategy game drawing inspiration from iconic titles like Command & Conquer and Warcraft 3.",
     twitter:"https://twitter.com/therealbytes",
     website:"https://rts.concretelabs.dev/",
+    engine:"Others"
+}, {
+    icon:Bubblewars,
+    name:"Bubblewars.io",
+    description:"Fully on-chain MMO where ETH is mass and momentum is conserved. Control an army of bubbles with physics based movement to absorb ETH from your enemies.",
+    twitter:"https://twitter.com/Bubblewars_io",
+    website:"https://bubblewars.mintlify.app/introduction",
     engine:"Others"
 }];
 export default GameData;
