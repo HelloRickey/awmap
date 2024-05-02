@@ -38,7 +38,7 @@ class Home extends Component {
     this.state = {
       theme: "light",
       selectedTab: 0,
-      nav: ["Events", "Infras", "Games", "Maps", "Explorers", "Articles"],
+      nav: ["Infras", "Games", "Maps", "Explorers", "Articles"],
       frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus", "Others"],
       gameData: GameData,
     };
@@ -200,7 +200,7 @@ class Home extends Component {
           </a>
         </div>
 
-        <div className="CategoryTitle" id="Events">
+        {/* <div className="CategoryTitle" id="Events">
           Events
         </div>
         <div className="CategoryIntroduce">
@@ -231,7 +231,7 @@ class Home extends Component {
               </div>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className="CategoryTitle" id="Infras">
           Infras

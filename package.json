@@ -21,7 +21,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "PORT=3001 react-app-rewired  start",
+    "start": "PORT=3001 react-app-rewired  --openssl-legacy-provider start",
     "build": "react-app-rewired  build && echo '/* /index.html 200' | cat >build/_redirects",
     "test": "react-app-rewired  test",
     "eject": "react-app-rewired  eject",

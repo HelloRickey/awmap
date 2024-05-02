@@ -10,6 +10,7 @@ import Worlds from "../assets/guiders/WORLDS.jpg"
 import Metacat from "../assets/guiders/metacat.jpg"
 import TheHerald from "../assets/guiders/TheHerald.jpg"
 import AutonomousAnonymous from "../assets/guiders/AutonomousAnonymous.jpg"
+import CommunityRedstone from "../assets/guiders/CommunityRedstone.png"
 export const Explorers = [
   {
     icon: WASD,
@@ -75,5 +76,10 @@ export const Explorers = [
     name: "Autonomous Anonymous",
     tags:["Community", "Event"],
     twitter: "https://twitter.com/Worlds_AA",
+  },{
+    icon: CommunityRedstone,
+    name: "Redstone Community",
+    tags:["Community", "Event"],
+    twitter: "https://community.redstone.xyz/",
   },
 ];
