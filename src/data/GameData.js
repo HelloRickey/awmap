@@ -283,7 +283,7 @@ const GameData = [{
     description:"A grand strategy MMO, set in a distant asteroid belt with a player-owned open economy. Build, Mine, Trade, Explore.",
     twitter:"https://x.com/influenceth",
     website:"https://www.influenceth.io/",
-    engine:"MUD"
+    engine:"Others"
 }, {
     icon:DUPER,
     name:"DUPER",
