@@ -37,6 +37,7 @@ import Influence from "../assets/gameicons/Influence.jpg"
 import DUPER from "../assets/gameicons/DUPER.jpg"
 import TxFarm from "../assets/gameicons/TxFarm.jpg"
 import Mirage from "../assets/gameicons/Mirage.jpg"
+import Kamigotchi from "../assets/gameicons/Kamigotchi.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -305,5 +306,12 @@ const GameData = [{
     twitter:"https://x.com/mirage_game_",
     website:"https://www.projectmirage.xyz/",
     engine:"Others"
+}, {
+    icon:Kamigotchi,
+    name:"Kamigotchi",
+    description:"Onchain pet-idle rpg.",
+    twitter:"https://x.com/kamigotchiworld",
+    website:"https://www.kamigotchi.io/",
+    engine:"MUD"
 }];
 export default GameData;

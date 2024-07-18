@@ -11,6 +11,7 @@ import Metacat from "../assets/guiders/metacat.jpg"
 import TheHerald from "../assets/guiders/TheHerald.jpg"
 import AutonomousAnonymous from "../assets/guiders/AutonomousAnonymous.jpg"
 import CommunityRedstone from "../assets/guiders/CommunityRedstone.png"
+import FOCGERSUNITE from "../assets/guiders/FOCGERSUNITE.jpg"
 export const Explorers = [
   {
     icon: WASD,
@@ -35,6 +36,11 @@ export const Explorers = [
     name: "AW House",
     tags: ["Hackathon", "Grant"],
     twitter: "https://twitter.com/AW_house",
+  },{
+    icon: FOCGERSUNITE,
+    name: "FOCGERS UNITE",
+    tags:["Media", "Podcast"],
+    twitter: "https://x.com/FOCGERS",
   },
   {
     icon: ComposableHub,
@@ -81,5 +87,5 @@ export const Explorers = [
     name: "Redstone Community",
     tags:["Community", "Event"],
     twitter: "https://community.redstone.xyz/",
-  },
+  }
 ];
