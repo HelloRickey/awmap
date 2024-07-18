@@ -33,6 +33,10 @@ import Mugen from "../assets/gameicons/Mugen.png"
 import ArkRTS from "../assets/gameicons/ArkRTS.png"
 import PAVED from "../assets/gameicons/PAVED.jpg"
 import Bubblewars from "../assets/gameicons/Bubblewars.jpg"
+import Influence from "../assets/gameicons/Influence.jpg"
+import DUPER from "../assets/gameicons/DUPER.jpg"
+import TxFarm from "../assets/gameicons/TxFarm.jpg"
+import Mirage from "../assets/gameicons/Mirage.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -272,6 +276,34 @@ const GameData = [{
     description:"Fully on-chain MMO where ETH is mass and momentum is conserved. Control an army of bubbles with physics based movement to absorb ETH from your enemies.",
     twitter:"https://twitter.com/Bubblewars_io",
     website:"https://bubblewars.mintlify.app/introduction",
+    engine:"Others"
+}, {
+    icon:Influence,
+    name:"Influence",
+    description:"A grand strategy MMO, set in a distant asteroid belt with a player-owned open economy. Build, Mine, Trade, Explore.",
+    twitter:"https://x.com/influenceth",
+    website:"https://www.influenceth.io/",
+    engine:"MUD"
+}, {
+    icon:DUPER,
+    name:"DUPER",
+    description:"High stakes social war game onchain.",
+    twitter:"https://x.com/playduper",
+    website:"https://www.duper.gg/",
+    engine:"Curio"
+}, {
+    icon:TxFarm,
+    name:"TxFarm",
+    description:"A fully onchain game for farming enthusiasts.",
+    twitter:"https://x.com/TxFarmHQ",
+    website:"https://dev-play.txfarm.xyz/",
+    engine:"Others"
+}, {
+    icon:Mirage,
+    name:"Project Mirage",
+    description:"Onchain island-building game.",
+    twitter:"https://x.com/mirage_game_",
+    website:"https://www.projectmirage.xyz/",
     engine:"Others"
 }];
 export default GameData;

@@ -39,7 +39,7 @@ class Home extends Component {
       theme: "light",
       selectedTab: 0,
       nav: ["Infras", "Games", "Maps", "Explorers", "Articles"],
-      frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus", "Others"],
+      frameWorks: ["All", "MUD", "Dojo", "Paima", "Argus","Curio", "Others"],
       gameData: GameData,
     };
   }
@@ -440,7 +440,7 @@ class Home extends Component {
         </ul>
 
         <div className="Footer">
-          <p>© 2023 AW Map</p>
+          <p>© 2024 AW Map</p>
         </div>
       </div>
     );
