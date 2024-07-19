@@ -16,6 +16,9 @@ import Dojo from "../assets/treeicons/dojo.svg";
 import Mud from "../assets/treeicons/mud.png";
 import Curio from "../assets/treeicons/curio.svg";
 import Redstone from "../assets/treeicons/redstone.png";
+
+import Interview from "../assets/treeicons/interview.svg";
+import Podcast from "../assets/treeicons/podcast.svg";
 const MapData = [
   {
     icon: WorldIcon,
@@ -233,6 +236,43 @@ const MapData = [
             icon: Redstone,
             title: "RedStone",
             link: "https://redstone.xyz/",
+            sub: [],
+          },
+        ],
+      },
+      {
+        icon: Podcast,
+        title: "Podcast",
+        link: "",
+        sub: [
+          {
+            icon: Interview,
+            title: "Meet the FOCGER @y77cao",
+            link: "https://x.com/FOCGERS/status/1805689400795226606",
+            sub: [],
+          },
+          {
+            icon: Interview,
+            title: "Meet the FOCGER @aloothero",
+            link: "https://x.com/focgers/status/1798047655555367403?s=46",
+            sub: [],
+          },
+          {
+            icon: Interview,
+            title: "Meet the FOCGER @raulonastool",
+            link: "https://x.com/focgers/status/1813532584736935981?s=46",
+            sub: [],
+          },
+          {
+            icon: Interview,
+            title: "Meet the FOCGER @ProofOfJoker",
+            link: "https://x.com/focgers/status/1810709716936388675?s=46",
+            sub: [],
+          },
+          {
+            icon: Interview,
+            title: "Meet the FOCGER @DarkosNightmare",
+            link: "https://x.com/focgers/status/1808095311019102571?s=46",
             sub: [],
           },
         ],
