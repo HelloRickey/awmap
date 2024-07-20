@@ -38,6 +38,7 @@ import DUPER from "../assets/gameicons/DUPER.jpg"
 import TxFarm from "../assets/gameicons/TxFarm.jpg"
 import Mirage from "../assets/gameicons/Mirage.jpg"
 import Kamigotchi from "../assets/gameicons/Kamigotchi.png"
+import ForTheKingdom from "../assets/gameicons/ForTheKingdom.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -312,6 +313,13 @@ const GameData = [{
     description:"Onchain pet-idle rpg.",
     twitter:"https://x.com/kamigotchiworld",
     website:"https://www.kamigotchi.io/",
+    engine:"MUD"
+}, {
+    icon:ForTheKingdom,
+    name:"For The Kingdom",
+    description:"An autonomous world, fully on-chain RPG where you play as a citizen of a kingdom, fighting for its glory.",
+    twitter:"https://x.com/4thekingdom_xyz",
+    website:"https://forthekingdom.xyz/",
     engine:"MUD"
 }];
 export default GameData;
