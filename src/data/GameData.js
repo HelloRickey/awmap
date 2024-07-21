@@ -39,6 +39,7 @@ import TxFarm from "../assets/gameicons/TxFarm.jpg"
 import Mirage from "../assets/gameicons/Mirage.jpg"
 import Kamigotchi from "../assets/gameicons/Kamigotchi.png"
 import ForTheKingdom from "../assets/gameicons/ForTheKingdom.png"
+import Tetris from "../assets/gameicons/Tetris.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -321,5 +322,12 @@ const GameData = [{
     twitter:"https://x.com/4thekingdom_xyz",
     website:"https://forthekingdom.xyz/",
     engine:"MUD"
+}, {
+    icon:Tetris,
+    name:"Tetris",
+    description:"Get ready to twist, turn, and drop your way to flying scores in this timeless puzzle, now reimagined on Starknet.",
+    twitter:"https://x.com/starkarcade",
+    website:"https://tetris-game.starkarcade.com/",
+    engine:"Dojo"
 }];
 export default GameData;
