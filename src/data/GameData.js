@@ -40,6 +40,7 @@ import Mirage from "../assets/gameicons/Mirage.jpg"
 import Kamigotchi from "../assets/gameicons/Kamigotchi.png"
 import ForTheKingdom from "../assets/gameicons/ForTheKingdom.png"
 import Tetris from "../assets/gameicons/Tetris.png"
+import Atemu from "../assets/gameicons/Atemu.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -328,6 +329,13 @@ const GameData = [{
     description:"Get ready to twist, turn, and drop your way to flying scores in this timeless puzzle, now reimagined on Starknet.",
     twitter:"https://x.com/starkarcade",
     website:"https://tetris-game.starkarcade.com/",
+    engine:"Dojo"
+}, {
+    icon:Atemu,
+    name:"Atemu",
+    description:"Collect, Battle & Conquer in the Fully On-Chain Strategy Card Game.",
+    twitter:"https://x.com/Atemu_world",
+    website:"http://atemu.xyz/",
     engine:"Dojo"
 }];
 export default GameData;
