@@ -41,6 +41,8 @@ import Kamigotchi from "../assets/gameicons/Kamigotchi.png"
 import ForTheKingdom from "../assets/gameicons/ForTheKingdom.png"
 import Tetris from "../assets/gameicons/Tetris.png"
 import Atemu from "../assets/gameicons/Atemu.jpg"
+import DUEL3 from "../assets/gameicons/DUEL3.jpg"
+import ByteBeasts from "../assets/gameicons/ByteBeasts.jpg"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -337,5 +339,19 @@ const GameData = [{
     twitter:"https://x.com/Atemu_world",
     website:"http://atemu.xyz/",
     engine:"Dojo"
+}, {
+    icon:DUEL3,
+    name:"DUEL3",
+    description:"An onchain card game with infinite scalability.",
+    twitter:"https://x.com/DuelThree",
+    website:"https://duel3.vercel.app",
+    engine:"Others"
+}, {
+    icon:ByteBeasts,
+    name:"ByteBeasts",
+    description:"ByteBeasts is an onchain game with dynamic NFT implementations.",
+    twitter:"https://x.com/0xByteBeasts",
+    website:"https://github.com/ByteBuildersLabs",
+    engine:"Others"
 }];
 export default GameData;
