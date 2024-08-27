@@ -43,6 +43,7 @@ import Tetris from "../assets/gameicons/Tetris.png"
 import Atemu from "../assets/gameicons/Atemu.jpg"
 import DUEL3 from "../assets/gameicons/DUEL3.jpg"
 import ByteBeasts from "../assets/gameicons/ByteBeasts.jpg"
+import PopCraft from "../assets/gameicons/PopCraft.png"
 const GameData = [{
     icon:SkyStrife,
     name:"Sky Strife",
@@ -353,5 +354,12 @@ const GameData = [{
     twitter:"https://x.com/0xByteBeasts",
     website:"https://github.com/ByteBuildersLabs",
     engine:"Others"
+}, {
+    icon:PopCraft ,
+    name:"PopCraft",
+    description:"PopCraft is a fully on-chain casual elimination game based on composability.",
+    twitter:"https://x.com/Metacat007",
+    website:"https://popcraft.pixelaw.xyz/",
+    engine:"MUD"
 }];
 export default GameData;
